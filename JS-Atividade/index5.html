@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Itens</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function confirmarApagar() {
+            return confirm('Você tem certeza que deseja apagar este item?');
+        }
+    </script>
+</head>
+<body class="container">
+    <h2 class="my-4">Lista de Itens</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Exemplo de linha de item -->
+            <tr>
+                <td>Item Exemplo</td>
+                <td>Descrição do item exemplo</td>
+                <td>
+                    <button class="btn btn-primary" onclick="editarItem()">Editar</button>
+                    <button class="btn btn-danger" onclick="return confirmarApagar()">Apagar</button>
+                </td>
+            </tr>
+            <!-- Adicione outras linhas conforme necessário -->
+        </tbody>
+    </table>
+</body>
+</html>
